@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Acerca de History Web</title>
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Estilos globales -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <!-- Enlace para saltar al contenido -->
+    <a href="#contenido-principal" class="skip-link">
+      Saltar al contenido principal
+    </a>
+
+    <!-- NAVBAR -->
+    <header>
+      <nav
+        class="navbar navbar-expand-lg navbar-dark hw-navbar fixed-top"
+        aria-label="Navegación principal"
+      >
+        <div class="container-xxl">
+          <a class="navbar-brand fw-bold" href="index.html">
+            History <span>Web</span>
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNavbar"
+            aria-controls="mainNavbar"
+            aria-expanded="false"
+            aria-label="Alternar navegación"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
+            <ul class="navbar-nav ms-lg-4">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="quienes-somos.html">
+                  Acerca de History Web
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#eventos">Eventos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="calidad/index.html">Calidad</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main id="contenido-principal" class="about-main">
+      <!-- Bloque 1: introducción -->
+      <section class="about-section">
+        <header class="about-header">
+          <h1 class="about-title">Acerca de History Web</h1>
+          <p class="about-lead">
+            <strong>History Web</strong> es un proyecto académico que transforma la
+            línea del tiempo histórica en una experiencia web clara, accesible y
+            fácil de mantener. Nació como un ejercicio de calidad de software y hoy
+            funciona como base para seguir integrando más eventos, recursos
+            educativos y funcionalidades orientadas a entornos reales.
+          </p>
+        </header>
+      </section>
+
+      <!-- Bloque 2: visión -->
+      <section class="about-section">
+        <h2 class="about-section-title">Visión del proyecto</h2>
+        <p class="about-text">
+          Nuestro objetivo es que cualquier estudiante o docente pueda recorrer la
+          historia desde el <strong>origen del universo</strong> hasta la
+          <strong>Edad Contemporánea</strong> con una interfaz sencilla, ordenada
+          y coherente. Al mismo tiempo, el sitio sirve como laboratorio para
+          aplicar normas, modelos y métricas de
+          <strong>calidad de software</strong>.
+        </p>
+      </section>
+
+      <!-- Bloque 3: cómo lo construimos -->
+      <section class="about-section">
+        <h2 class="about-section-title">Cómo construimos History Web</h2>
+        <ul class="about-list">
+          <li>
+            Definimos una estructura clara de carpetas:
+            <strong>assets, eventos, subeventos y calidad</strong>.
+          </li>
+          <li>
+            Diseñamos componentes reutilizables: navbar fijo, tarjetas de eventos y
+            footer unificado.
+          </li>
+          <li>
+            Aplicamos buenas prácticas de accesibilidad: contraste, navegación por
+            teclado y textos alternativos.
+          </li>
+          <li>
+            Concentramos estilos en una sola hoja <code>styles.css</code> usando
+            variables de color y tipografía.
+          </li>
+          <li>
+            Validamos el sitio con pruebas manuales y auditorías automatizadas
+            usando <strong>Lighthouse</strong>.
+          </li>
+        </ul>
+      </section>
+
+      <!-- Bloque 4: futuro del proyecto -->
+      <section class="about-section">
+        <h2 class="about-section-title">Hacia dónde va el proyecto</h2>
+        <ul class="about-list">
+          <li>
+            Agregar más eventos y subeventos históricos con nuevas ilustraciones e
+            historias breves.
+          </li>
+          <li>
+            Incorporar secciones interactivas para estudiantes (línea del tiempo,
+            retos y preguntas rápidas).
+          </li>
+          <li>
+            Explorar un módulo de inicio de sesión para guardar progreso y
+            favoritos.
+          </li>
+          <li>
+            Seguir midiendo la calidad del sitio con nuevas métricas y reportes de
+            desempeño.
+          </li>
+        </ul>
+      </section>
+
+      <!-- Bloque 5: CTA final -->
+      <section class="about-section about-cta">
+        <h2 class="about-section-title">Te invitamos a seguir explorando</h2>
+        <p class="about-text">
+          Puedes volver a la página principal de eventos y recorrer la historia
+          por etapas, o revisar en detalle cómo se aplican las normas y métricas
+          en el apartado de calidad del software.
+        </p>
+
+        <div class="about-actions">
+          <a href="index.html#eventos" class="btn btn-solid-gold">
+            Ver eventos históricos
+          </a>
+          <a href="calidad/index.html" class="btn btn-solid-red">
+            Ver apartado de calidad
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer text-center">
+      <div class="container">
+        © 2025 <strong>History Web</strong> · Proyecto educativo.
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    ></script>
+  </body>
+</html>
