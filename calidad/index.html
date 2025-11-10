@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Calidad del software | History Web</title>
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Estilos globales -->
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+  </head>
+  <body>
+    <!-- Enlace para saltar al contenido -->
+    <a href="#contenido-principal" class="skip-link">
+      Saltar al contenido principal
+    </a>
+
+    <!-- NAVBAR -->
+    <header>
+      <nav
+        class="navbar navbar-expand-lg navbar-dark hw-navbar fixed-top"
+        aria-label="Navegación principal"
+      >
+        <div class="container-xxl">
+          <a class="navbar-brand fw-bold" href="../index.html">
+            History <span>Web</span>
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNavbar"
+            aria-controls="mainNavbar"
+            aria-expanded="false"
+            aria-label="Alternar navegación"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="mainNavbar"
+          >
+            <ul class="navbar-nav ms-lg-4">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../acerca-de-history-web.html">
+                  Acerca de History Web
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html#eventos">Eventos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">Calidad</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main id="contenido-principal" class="subpage-main">
+      <!-- Cabecera general -->
+      <header class="subpage-header">
+        <h1 class="subpage-title">Calidad del software en History Web</h1>
+        <p class="subpage-subtitle">
+          Este apartado resume cómo se aplican normas, modelos, estándares,
+          programación, pruebas y recomendaciones al desarrollo de History Web.
+          El objetivo es que el sitio sea una línea del tiempo clara y también
+          un ejemplo sencillo de proyecto web con buena calidad.
+        </p>
+      </header>
+
+      <!-- Normas -->
+      <section class="subpage-content" id="normas">
+        <h2>Normas</h2>
+        <p>
+          Aunque History Web es un proyecto académico, se inspira en normas
+          internacionales de ingeniería de software. De forma simplificada,
+          tomamos ideas de:
+        </p>
+        <ul>
+          <li>
+            <strong>ISO/IEC 12207</strong> – Procesos del ciclo de vida del
+            software: separamos claramente las actividades de
+            planificación, diseño de la interfaz, codificación y verificación.
+          </li>
+          <li>
+            <strong>ISO/IEC 25010</strong> y la antigua
+            <strong>ISO/IEC 9126</strong> – Modelo de calidad del producto:
+            usamos sus características como guía (usabilidad, mantenibilidad,
+            portabilidad, fiabilidad básica).
+          </li>
+        </ul>
+        <p>
+          En la práctica, estas ideas se concretan en decisiones muy visibles
+          dentro del sitio:
+        </p>
+        <ul>
+          <li>
+            Uso de HTML5 semántico (<code>&lt;header&gt;</code>,
+            <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code>,
+            <code>&lt;footer&gt;</code>) para organizar la información.
+          </li>
+          <li>
+            Accesibilidad: enlace para “Saltar al contenido principal”,
+            textos alternativos en las imágenes y contraste adecuado entre
+            fondo y texto.
+          </li>
+          <li>
+            Navegación coherente en todas las páginas: mismo menú fijo arriba
+            y mismo pie de página, lo que reduce errores y confusiones.
+          </li>
+          <li>
+            Contenido estructurado en secciones: eventos principales,
+            subeventos y páginas de detalle con el mismo patrón de diseño.
+          </li>
+        </ul>
+      </section>
+
+      <!-- Modelos -->
+      <section class="subpage-content" id="modelos">
+        <h2>Modelos</h2>
+        <p>
+          Para evaluar la calidad de History Web usamos el modelo de
+          <strong>ISO/IEC 25010</strong> como referencia conceptual, aunque de
+          forma adaptada al contexto educativo. Nos centramos sobre todo en:
+        </p>
+        <ul>
+          <li>
+            <strong>Usabilidad:</strong> interfaz limpia, títulos claros,
+            botones destacados (oro y rojo) y lectura cómoda en todas las
+            secciones.
+          </li>
+          <li>
+            <strong>Mantenibilidad:</strong> estructura de carpetas simple
+            (<code>assets</code>, <code>eventos</code>, subcarpetas por era,
+            <code>calidad</code>) y estilos centralizados en
+            <code>styles.css</code>.
+          </li>
+          <li>
+            <strong>Portabilidad:</strong> el sitio está preparado para
+            funcionar en local y en GitHub Pages usando rutas relativas.
+          </li>
+          <li>
+            <strong>Fiabilidad básica:</strong> todos los enlaces se revisan
+            para evitar errores 404 y mantener una experiencia consistente.
+          </li>
+        </ul>
+      </section>
+
+      <!-- Estándares -->
+      <section class="subpage-content" id="estandares">
+        <h2>Estándares</h2>
+        <p>
+          History Web se apoya en estándares abiertos que favorecen la
+          interoperabilidad y la comprensión del código:
+        </p>
+        <ul>
+          <li>
+            <strong>HTML5 y CSS3 (W3C):</strong> se respeta la sintaxis y la
+            estructura recomendada; los estilos se organizan con clases
+            reutilizables como <code>event-card</code>,
+            <code>event-detail-main</code> o <code>subpage-main</code>.
+          </li>
+          <li>
+            <strong>Bootstrap 5:</strong> se utiliza para la grilla responsiva,
+            la barra de navegación y algunos espaciados, lo que simplifica el
+            soporte a distintos tamaños de pantalla.
+          </li>
+          <li>
+            <strong>WCAG 2.1 (a nivel básico):</strong> se cuidan contraste,
+            tamaños de fuente legibles, navegación por teclado y uso de textos
+            descriptivos en los enlaces.
+          </li>
+          <li>
+            <strong>Buenas prácticas de código:</strong> nombres de clases
+            descriptivos, indentación consistente y separación clara entre
+            contenido (HTML) y presentación (CSS).
+          </li>
+        </ul>
+      </section>
+
+      <!-- Código y programación -->
+      <section class="subpage-content" id="codigo">
+        <h2>Código y programación</h2>
+        <p>
+          La implementación se centra en HTML y CSS con apoyo de Bootstrap, pero
+          se siguen criterios de diseño típicos de proyectos más grandes:
+        </p>
+        <ul>
+          <li>
+            Una única hoja de estilos global:
+            <code>assets/css/styles.css</code> con variables de color
+            (<code>--gold</code>, <code>--red</code>, <code>--text-main</code>)
+            y componentes reutilizables (tarjetas, botones, layouts).
+          </li>
+          <li>
+            Páginas de eventos principales con tarjetas en grilla y subpáginas
+            de detalle con título, imagen de 512×512 y texto largo organizado
+            en secciones.
+          </li>
+          <li>
+            Rutas relativas pensadas para funcionar tanto en local como en
+            GitHub Pages, evitando URLs absolutas que puedan romperse.
+          </li>
+          <li>
+            Estructura modular de carpetas: cada bloque histórico (origen del
+            universo, formación de la Tierra, eras geológicas, edades
+            históricas) tiene su propio <code>index.html</code> y subeventos.
+          </li>
+        </ul>
+      </section>
+
+      <!-- Pruebas y evaluación -->
+      <section class="subpage-content" id="pruebas">
+        <h2>Pruebas y evaluación</h2>
+        <p>
+          Las pruebas en History Web son principalmente manuales, pero se
+          inspiran en la familia de normas <strong>ISO/IEC/IEEE 29119</strong>
+          sobre pruebas de software, adaptadas a un entorno web sencillo. Se
+          consideran varios tipos de prueba:
+        </p>
+        <ul>
+          <li>
+            <strong>Pruebas funcionales:</strong> comprobar que todos los
+            enlaces funcionan (eventos, subeventos, botones de “Ver evento”,
+            “Volver a eventos”, navegación entre Calidad y Acerca de).
+          </li>
+          <li>
+            <strong>Pruebas de regresión visual:</strong> cada vez que se
+            agrega un nuevo evento se revisa que el diseño de las tarjetas
+            siga alineado y no se rompa la distribución de la grilla.
+          </li>
+          <li>
+            <strong>Pruebas responsivas:</strong> revisar el sitio en
+            escritorio, tableta y móvil usando las herramientas del navegador
+            para asegurar que menús, tarjetas e imágenes se adaptan.
+          </li>
+          <li>
+            <strong>Pruebas de accesibilidad básica:</strong> uso de
+            Lighthouse para medir contraste, uso de etiquetas correctas y
+            facilidad de navegación por teclado.
+          </li>
+          <li>
+            <strong>Pruebas de rendimiento:</strong> se mide con Lighthouse el
+            tiempo de carga, tamaño de imágenes y uso de recursos externos
+            (por ejemplo, Bootstrap desde CDN).
+          </li>
+        </ul>
+      </section>
+
+            <!-- Resultados Lighthouse y checklist -->
+      <section class="subpage-content" id="resultados">
+        <h2>Resultados de Lighthouse y checklist de pruebas</h2>
+
+        <p>
+          A modo de referencia, estos son resultados aproximados obtenidos con
+          <strong>Lighthouse</strong> en la página principal y en varias
+          subpáginas de History Web. Los valores pueden cambiar según el
+          navegador, el dispositivo y la conexión a Internet.
+        </p>
+      <!-- Resultados numéricos del modelo -->
+      <section class="subpage-content" id="evaluacion-app">
+        <h2>Evaluación cuantitativa de History Web</h2>
+
+        <p>
+          A continuación se muestra un ejemplo de evaluación aplicada a History Web.
+          Los valores pueden actualizarse cada vez que se realicen nuevas pruebas.
+        </p>
+
+        <div class="table-responsive">
+          <table class="table table-sm table-borderless align-middle">
+            <thead>
+              <tr>
+                <th scope="col">Factor</th>
+                <th scope="col">Métrica base</th>
+                <th scope="col">Nota (0–5)</th>
+                <th scope="col">Peso</th>
+                <th scope="col">Nota ponderada</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Usabilidad</strong></td>
+                <td>Revisión heurística + pruebas con usuarios</td>
+                <td>4,5</td>
+                <td>0,25</td>
+                <td>1,13</td>
+              </tr>
+              <tr>
+                <td><strong>Rendimiento</strong></td>
+                <td>Performance Lighthouse ≈ 95/100</td>
+                <td>4,8</td>
+                <td>0,20</td>
+                <td>0,96</td>
+              </tr>
+              <tr>
+                <td><strong>Accesibilidad</strong></td>
+                <td>Accessibility Lighthouse ≈ 98/100</td>
+                <td>4,9</td>
+                <td>0,20</td>
+                <td>0,98</td>
+              </tr>
+              <tr>
+                <td><strong>Calidad interna / mantenibilidad</strong></td>
+                <td>Revisión de código y estructura</td>
+                <td>4,3</td>
+                <td>0,15</td>
+                <td>0,65</td>
+              </tr>
+              <tr>
+                <td><strong>Valor educativo del contenido</strong></td>
+                <td>Revisión pedagógica de eventos y descripciones</td>
+                <td>4,7</td>
+                <td>0,20</td>
+                <td>0,94</td>
+              </tr>
+              <tr>
+                <td colspan="4" class="text-end">
+                  <strong>Calidad total (0–5)</strong>
+                </td>
+                <td><strong>4,66 / 5</strong></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p class="about-text">
+          Estos valores son un ejemplo. Para el informe final se recomienda
+          repetir las pruebas, anotar los resultados reales de Lighthouse
+          y ajustar las notas de cada factor según la evidencia obtenida.
+        </p>
+      </section>
+
+        <!-- Tabla de resultados -->
+        <div class="table-responsive">
+          <table class="table table-sm table-borderless align-middle">
+            <thead>
+              <tr>
+                <th scope="col">Métrica</th>
+                <th scope="col">Valor típico</th>
+                <th scope="col">Comentario</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Performance</strong></td>
+                <td>90–100</td>
+                <td>
+                  Imágenes optimizadas y uso moderado de recursos externos.
+                  Puede variar según la velocidad de la red.
+                </td>
+              </tr>
+              <tr>
+                <td><strong>Accesibilidad</strong></td>
+                <td>90–100</td>
+                <td>
+                  Buen contraste, textos alternativos en imágenes y navegación
+                  por teclado en el menú principal.
+                </td>
+              </tr>
+              <tr>
+                <td><strong>Buenas prácticas</strong></td>
+                <td>90–100</td>
+                <td>
+                  Uso de HTTPS (en GitHub Pages), recursos cargados desde
+                  orígenes confiables y código HTML5 válido.
+                </td>
+              </tr>
+              <tr>
+                <td><strong>SEO</strong></td>
+                <td>90–100</td>
+                <td>
+                  Títulos claros, etiquetas <code>&lt;meta&gt;</code> básicas y
+                  estructura semántica de encabezados.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p>
+          Para mantener o mejorar estos valores, se propone el siguiente
+          checklist de pruebas rápidas cada vez que se actualice el sitio:
+        </p>
+
+        <!-- Checklist de pruebas -->
+        <ul class="about-list">
+          <li>
+            <strong>Enlaces:</strong> comprobar que los botones
+            “Ver evento”, “Volver a eventos” y la navegación del menú funcionen
+            en todas las páginas nuevas.
+          </li>
+          <li>
+            <strong>Responsivo:</strong> revisar la visualización en escritorio,
+            tableta y móvil usando las herramientas del navegador.
+          </li>
+          <li>
+            <strong>Accesibilidad:</strong> ejecutar Lighthouse y verificar que
+            no aparezcan errores graves (contraste, etiquetas sin texto,
+            botones sin nombre accesible).
+          </li>
+          <li>
+            <strong>Rendimiento:</strong> ejecutar Lighthouse y confirmar que
+            las métricas de Performance se mantengan en valores altos
+            (por encima de 90 cuando sea posible).
+          </li>
+          <li>
+            <strong>Código:</strong> validar que los nuevos archivos HTML
+            respeten la misma estructura (navbar, main, footer) y usen las
+            clases existentes de estilos.
+          </li>
+          <li>
+            <strong>Contenido:</strong> revisar ortografía, coherencia de
+            fechas, nombres de eventos y descripciones históricas.
+          </li>
+        </ul>
+      </section>
+
+
+      <!-- Conclusiones -->
+      <section class="subpage-content" id="conclusiones">
+        <h2>Conclusiones</h2>
+        <p>
+          History Web muestra que es posible construir una línea del tiempo
+          educativa con un diseño atractivo y, al mismo tiempo, aplicar
+          principios de calidad de software inspirados en normas ISO. La
+          organización por eventos y subeventos, el uso de componentes
+          reutilizables y la concentración de estilos en una sola hoja facilitan
+          el mantenimiento y la evolución del proyecto.
+        </p>
+        <p>
+          El proyecto no pretende cubrir todos los requisitos de las normas
+          formales, pero sí acercar al estudiante a la forma de pensar de la
+          ingeniería de software: procesos claros, criterios de calidad y
+          evidencia mediante pruebas.
+        </p>
+      </section>
+
+      <!-- Recomendaciones -->
+      <section class="subpage-content" id="recomendaciones">
+        <h2>Recomendaciones</h2>
+        <p>
+          Para futuras versiones de History Web se recomienda:
+        </p>
+        <ul>
+          <li>
+            Añadir pruebas automáticas (por ejemplo, scripts que verifiquen
+            enlaces rotos o validen el HTML y el CSS).
+          </li>
+          <li>
+            Documentar en un README los pasos para desplegar el proyecto y
+            actualizar eventos, incluyendo una guía rápida de calidad.
+          </li>
+          <li>
+            Incorporar un módulo de JavaScript para hacer más interactiva la
+            línea del tiempo (búsqueda de eventos, filtros por era, marcadores
+            de favoritos).
+          </li>
+          <li>
+            Registrar de forma histórica los resultados de las auditorías de
+            Lighthouse para comparar versiones del sitio y detectar mejoras.
+          </li>
+        </ul>
+
+        <div class="about-actions">
+          <a href="../index.html#eventos" class="btn btn-solid-gold">
+            Volver a eventos
+          </a>
+          <a href="../acerca-de-history-web.html" class="btn btn-solid-red">
+            Ver “Acerca de History Web”
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer text-center">
+      <div class="container">
+        © 2025 <strong>History Web</strong> · Proyecto educativo.
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    ></script>
+  </body>
+</html>
